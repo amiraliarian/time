@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقویم شمسی</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jalaali-js/dist/jalaali.js"></script>
+</head>
+<body>
+    <div class="calendar">
+        <header>
+            <button id="prev-year" class="nav-btn">&laquo; سال قبل</button>
+            <button id="prev-month" class="nav-btn">&lsaquo; ماه قبل</button>
+            <h2 id="month-year"></h2>
+            <button id="next-month" class="nav-btn">ماه بعد &rsaquo;</button>
+            <button id="next-year" class="nav-btn">سال بعد &raquo;</button>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>شنبه</th>
+                    <th>یک‌شنبه</th>
+                    <th>دوشنبه</th>
+                    <th>سه‌شنبه</th>
+                    <th>چهارشنبه</th>
+                    <th>پنج‌شنبه</th>
+                    <th>جمعه</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- ردیف‌های تقویم به صورت پویا اضافه خواهند شد -->
+            </tbody>
+        </table>
+    </div>
+    <div id="note-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>یادداشت برای <span id="selected-date"></span></h2>
+            <textarea id="note-text" placeholder="یادداشت خود را بنویسید..."></textarea>
+            <button id="save-note">ذخیره</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
